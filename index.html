@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ستون چپ -->
+  <div class="left">
+    <h3>پنل کاربر</h3>
+    <button id="settings">حساب کاربری</button>
+    <button id="account">تنظیمات</button>
+    <button id="supportBtn">پشتیبانی</button>
+    <button id="about">درباره سازنده</button>
+  </div>
+
+  <!-- ستون وسط -->
+  <div class="center">
+    <h2>Cyber Site</h2>
+    <p>ساخته شده توسط مهبد فرجیان</p>
+
+    <!-- پست با عکس و متن -->
+    <div class="post-box fade-in">
+      <img src="./images/post1.jpeg" alt="آیفون 17" style="width:80%; border-radius:15px; display:block; margin:20px auto;">
+      <p style="font-size:20px; text-align:center; margin-top:10px;">
+        سایبر سایت تقدیم می‌کند ✨  
+        این وبسایت ایرانی به شما این قابلیت رو می‌ده که بدون پرداخت حتی یک ریال  
+        بتونید دوره‌های رایگان برنامه‌نویسی رو پشت سر بذارید.  
+        در صورت داشتن سوال، از بخش پشتیبانی با ما در ارتباط باشید.
+      </p>
+    </div>
+  </div>
+
+  <!-- ستون راست -->
+  <div class="right">
+    <h3>دوره‌های آموزشی</h3>
+    <div class="post">مقدمات برنامه‌نویسی</div>
+    <div class="post">طراحی اپلیکیشن</div>
+    <div class="post">طراحی وب</div>
+    <div class="post">ساخت ویروس</div>
+    <div class="post">شبکه و امنیت</div>
+    <div class="post">حفاظت از شبکه</div>
+  </div>
+
+  <!-- 📩 پنل پشتیبانی -->
+  <div id="support-panel" class="hidden">
+    <h3>سوالات متداول</h3>
+    <button class="faq-btn" data-msg="کاربر عزیز، مشکل آپلود نشدن عکس ممکنه به خاطر فیلترشکن یا سرعت پایین اینترنت باشه.">چرا عکس‌های سایت آپلود نمی‌شود؟</button>
+    <button class="faq-btn" data-msg="برای دیدن دوره‌ها روی دوره کلیک و فایل را بارگیری کنید.">چرا نمی‌توانم دوره‌ها را ببینم؟</button>
+    <button class="faq-btn" data-msg="خیر، برای دریافت دوره‌های آموزشی نیازی به پرداخت هزینه نیست.">آیا دوره‌ها رایگان هستند؟</button>
+    <button class="faq-btn" data-msg="فقط پیام خود را برای پشتیبانی ارسال کنید.">چطور با مدیریت در ارتباط باشم؟</button>
+    <button class="faq-btn" data-msg="اطلاعات شما رمزگذاری شده و امن است.">آیا اطلاعات من محفوظ است؟</button>
+
+    <hr>
+    <button id="other-question">❓ سوال شما در بالا نبود؟</button>
+    <button id="contact-support">📩 ارتباط با تیم پشتیبانی</button>
+    <button id="close-support" class="close-btn">بستن پنل</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

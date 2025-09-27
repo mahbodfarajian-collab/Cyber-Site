@@ -1,0 +1,135 @@
+/* 🌐 تنظیمات کلی */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #143651;
+  color: #ffffff;
+  display: flex;
+  height: 100vh;
+}
+
+.left, .center, .right {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 📌 ستون چپ */
+.left {
+  width: 20%;
+  background-color: #1a3a5b;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.left button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* 📌 ستون وسط */
+.center {
+  width: 60%;
+  background-color: #143651;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.post-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* 📌 ستون راست */
+.right {
+  width: 20%;
+  background-color: #1a3a5b;
+  border-radius: 0 10px 10px 0;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+}
+
+.right .post {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right .post:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* 📩 پنل پشتیبانی */
+#support-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a3a5b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  z-index: 1000;
+  display: none;
+}
+
+#support-panel h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#support-panel button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#support-panel button:hover {
+  background-color: #2980b9;
+}
+
+#support-panel .close-btn {
+  background-color: #e74c3c;
+}
+#support-panel .close-btn:hover {
+  background-color: #c0392b;
+}
+
+/* پنهان کردن پنل */
+.hidden {
+  display: none;
+}
